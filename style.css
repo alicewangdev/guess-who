@@ -1,0 +1,80 @@
+.newgamebutton {
+    background-color: #EFB25B; /* Green */
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Nunito;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.newgamebutton:hover {
+    background-color: #d8a051; /* Green */
+    transition: 0.3s;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Nunito;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+button {
+    background-color: #97C0D9; /* Green */
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Nunito;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border:none;
+}
+button:hover {
+    background-color: #85aac2; /* Green */
+    border-radius: 20px;
+    transition: 0.3s;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Nunito;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border:none;
+}
+#overlay {
+position: fixed;
+display: none;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.747);
+z-index: 2;
+cursor: pointer;
+}
+
+#text{
+position: absolute;
+top: 50%;
+left: 50%;
+font-size: 50px;
+color: white;
+transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+}
+p {
+font-family: 'Nunito';  color: white;
+text-shadow: 2px 2px 4px #000000;  
+}
+
+.mobileShow {display: none;} 
+
+/* Smartphone Portrait and Landscape */ 
+
+
+@media only screen and (max-width: 600px) {
+.mobileShow {display: inline;}
+}

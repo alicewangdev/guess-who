@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Please play this game on desktop for optimal experience :) -->
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Css -->
+
+        <link rel="stylesheet" type="text/css"  href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+        <!-- Title -->
+        <title>Guess Who Game</title>  
+        <link rel = "icon" href =  "images/guesswho.svg" type = "image/x-icon"> 
+
+    </head>
+    
+    <body style="background-image:linear-gradient(#CAE5F3, #CEFFE1); margin-top: 5%">
+        
+        <div class="container" style="background-image:linear-gradient(#F2E0B7, #D1B77E); border-radius: 10px; border: solid; border-color: #C9A780; margin-top: 2%; margin-bottom: 2%;  padding-left: 2%;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div class="row" >
+                <div class="col" >
+                    <a href="homepage.html"><img src="images/cancel.png" style="float:right"></a>
+                </div>
+            </div>
+            <div class="row vertical-center">
+                <div class="col-lg-4 col-md-4 mobileShow">
+                    <img src="images/guesswho.svg" class="w-100">
+                </div>
+                <div class="col-lg-4 col-md-4 mobileShow text-center">
+                    <p style="margin-left: 10%; ">Your Character:</p>
+                    <script>
+                       
+                        var randomImage = new Array();
+                        
+                        randomImage[0] = "images/kyliejenner.png";
+                        randomImage[1] = "images/shawnmendes.png";
+                        randomImage[2] = "images/arianagrande.png";
+                        randomImage[3] = "images/jenniekim.png";
+                        randomImage[4] = "images/justinbieber.png";
+                        randomImage[5] = "images/zendaya.png";
+                        randomImage[6] = "images/zaynmalik.png";
+                        randomImage[7] = "images/demilovato.png";
+                        randomImage[8] = "images/taylorswift.png";
+                        randomImage[9] = "images/jadensmith.png";
+                        randomImage[10] = "images/rihanna.png";
+                        randomImage[11] = "images/taehyung.png";
+                        randomImage[12] = "images/selenagomez.png";
+                        randomImage[13] = "images/harrystyles.png";
+                        randomImage[14] = "images/joejonas.png";
+                        randomImage[15] = "images/jungkook.png";
+                        
+                        function getRandomImage() { 
+                            var number = Math.floor(Math.random()*randomImage.length);
+                            document.write('<img src="'+randomImage[number]+'" />');
+                        }
+                        getRandomImage()
+                        
+                        </script>
+                    
+                </div>
+            </div>
+
+            <div class="row vertical-center">
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/justinbieber.png"  id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>   
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/taylorswift.png" id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>   
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/jenniekim.png"  id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>     
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    
+                    <img src="images/jadensmith.png" id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>  
+                <div class="col-lg-4 col-md-4 d-none d-md-block text-center">
+                    <img src="images/guesswho.svg" class="w-60" style="width: 80%">
+                    <p>Your Character:</p>
+                </div>     
+            </div>
+
+            <div class="row vertical-center">
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/arianagrande.png"  id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>   
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/shawnmendes.png"  id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>   
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/harrystyles.png"  id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>     
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/jungkook.png" id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>  
+                <div class="col-lg-2 col-md-2 d-none d-md-block text-center mx-auto">
+                    
+                    <script>
+                       
+                        var randomImage = new Array();
+                        
+                        randomImage[0] = "images/kyliejenner.png";
+                        randomImage[1] = "images/shawnmendes.png";
+                        randomImage[2] = "images/arianagrande.png";
+                        randomImage[3] = "images/jenniekim.png";
+                        randomImage[4] = "images/justinbieber.png";
+                        randomImage[5] = "images/zendaya.png";
+                        randomImage[6] = "images/zaynmalik.png";
+                        randomImage[7] = "images/demilovato.png";
+                        randomImage[8] = "images/taylorswift.png";
+                        randomImage[9] = "images/jadensmith.png";
+                        randomImage[10] = "images/rihanna.png";
+                        randomImage[11] = "images/taehyung.png";
+                        randomImage[12] = "images/selenagomez.png";
+                        randomImage[13] = "images/harrystyles.png";
+                        randomImage[14] = "images/joejonas.png";
+                        randomImage[15] = "images/jungkook.png";
+                        
+                        function getRandomImage() { 
+                            var number = Math.floor(Math.random()*randomImage.length);
+                            document.write('<img src="'+randomImage[number]+'" />');
+                        }
+                        getRandomImage()
+                        
+                        </script>
+                    
+                </div>    
+                      
+            </div>
+            <div class="row vertical-center">
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/zendaya.png" id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>   
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/taehyung.png"  id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>   
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/kyliejenner.png" id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>     
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/zaynmalik.png"  id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>  
+                <div class="col-lg-2 col-md-2 d-none d-md-block text-center mx-auto" >
+                    <br>
+                    <a href="index.html" class="btn btn-info" role="button"style="margin-left: 10%; border-radius: 15px; background-color: #d8a051; border: none; font-family: nunito; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);">New Game</a>
+                    
+                    <a href="https://www.youtube.com/watch?v=a76UPzU2VXM&ab_channel=TripleSGames" target="_blank" class="btn btn-info" role="button"style="margin-left: 10%; margin-top: 7%; border-radius: 15px;background-color:  #97C0D9; border: none; font-family: nunito; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);" >Tutorial</a>
+                    
+                    
+                    
+                    
+                </div>    
+                      
+            </div>
+            <div class="row vertical-center" style="margin-bottom: 3%">
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/selenagomez.png"  id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>   
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/demilovato.png"  id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>   
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/joejonas.png"  id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>     
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+                    <img src="images/rihanna.png"  id="image1" onclick=diffImage(this) style="cursor: pointer; "/>
+                </div>  
+                <div class="col-lg-4 col-md-4 d-none d-md-block">
+                    
+                </div>    
+                      
+            </div>
+        </div>
+    
+        <!--Scripts-->
+        <script>
+            function diffImage(img) {
+                if(img.src.match(/blank/)) img.src = "images/flip.png";
+                else img.src = "images/flip.png";
+            }
+        </script>
+        <script>
+            // When the user clicks on div, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+            </script>
+        <script>
+            function on() {
+              document.getElementById("overlay").style.display = "block";
+            }
+            
+            function off() {
+              document.getElementById("overlay").style.display = "none";
+            }
+        </script>
+
+     
+
+    </body>
+
+       <!--Bootstrap jqueries-->
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+</html>
